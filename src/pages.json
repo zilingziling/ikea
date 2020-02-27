@@ -1,89 +1,90 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/moreverify/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/BirthdayVerify/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/MyProfile/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/NameVerify/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
 			"path": "pages/NewMember/index",
 			"style": {
 				"navigationBarTitleText": "ikea"
 			}
 		},
 		{
-			"path": "pages/NewVerifyAddress/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/NewVerifyInfo/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/NewVerifyPhone/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/NewVerifyPlan/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/NewVerifyShop/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/PhoneVerify/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/Verify/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
-		{
-			"path": "pages/Success/index",
+			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "ikea"
 			}
 		}
+//		{
+//			"path": "pages/moreverify/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/BirthdayVerify/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/MyProfile/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/NameVerify/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//
+//		{
+//			"path": "pages/NewVerifyAddress/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/NewVerifyInfo/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/NewVerifyPhone/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/NewVerifyPlan/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/NewVerifyShop/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/PhoneVerify/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/Verify/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		},
+//		{
+//			"path": "pages/Success/index",
+//			"style": {
+//				"navigationBarTitleText": "ikea"
+//			}
+//		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

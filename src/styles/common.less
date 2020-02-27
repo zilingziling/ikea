@@ -1,0 +1,221 @@
+body {
+  font-size: 0.32rem;
+  -webkit-tap-highlight-color:transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+  .iphonex{padding-top:44px;padding-bottom: 34px;} 
+  .iphonex:before{content:”;display:block;position: fixed;width:100%;height:44px;background-color: #000;top:0;left: 0;z-index:9999;} 
+  .iphonex:after{content:”;display:block;position: fixed;width:100%;height:34px;bottom:0;left: 0;z-index:9999;} 
+  } 
+
+
+@white: #fff;
+@grey: #999;
+@grey-deep: #666;
+@deep: #333;
+@black: #000;
+@border: #E8E8E8;
+
+
+
+/deep/ .app-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hollister-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/deep/ .page-content {
+  padding: 2.5rem;
+
+  .form {
+    .form-item {
+      margin-bottom: 1.2rem;
+      padding: 0 .4rem;
+      background: @white;
+      border-radius: 6px;
+      border: 1px solid @deep;
+      overflow: hidden;
+
+      .mint-cell {
+        min-height: 2.4rem;
+        line-height: 2.4rem;
+
+        .mint-cell-title {
+          width: 4.6rem;
+          min-width: 4.6rem;
+          max-width: 4.6rem;
+        }
+
+        .mint-cell-value {
+          width: 10rem;
+          color: @grey-deep;
+
+          input:disabled {
+            background: none;
+            color: @grey;
+            -webkit-text-fill-color: @grey;
+            opacity: 1;
+          }
+        }
+
+        &.disabled {
+          .mint-cell-value {
+            color: @grey;
+          }
+
+          .mint-field-core {
+            color: @grey;
+          }
+        }
+      }
+    }
+
+    .no-border {
+      border: none;
+      background: none;
+    }
+  }
+
+  .link {
+    font-weight: 500;
+    margin: 0 .2rem;
+    text-decoration: underline;
+  }
+
+  .mint-button--default {
+    background: #1E1F27;
+    color: @white;
+  }
+}
+
+.mint-datetime-action {
+  color: #888;
+}
+
+.mint-cell {
+  display: inline-block;
+
+  .mint-cell-wrapper {
+    background: none !important;
+  }
+}
+
+.mint-checklist-title {
+  font: 1rem/2rem "";
+  color: #333;
+}
+
+.mint-checkbox-core {
+  border-radius: 0;
+}
+
+.mint-cell:last-child {
+  background: none;
+}
+
+.mint-checkbox-input:checked+.mint-checkbox-core {
+  background-color: #888;
+  border-color: #888;
+}
+
+.mint-datetime-action {
+  color: #888;
+}
+
+.mint-popup {
+  width: 100%;
+}
+
+.picker-toolbar {
+  display: flex;
+  justify-content: space-between;
+	border-bottom: 1px solid #eee;
+  button {
+		width: 50%;
+		text-align: center;
+    background: none;
+    border: none;
+		box-shadow: none;
+		font-size: 16px;
+  }
+}
+.mint-toast-text{font-size: 16px;}
+.mint-checklist-title{font-size: .875rem; font-weight: 600;}
+.mint-checkbox-label{font-size:.875rem}
+.mint-cell{min-height: 2.5rem;width: 43%;}
+.mint-cell-wrapper{padding:0;font-size:0.875rem;height: 1rem;}
+.mint-checkbox-core{width:1rem;height: 1rem;}
+// .mint-checkbox-core::after{width:0.4rem;height:0.4rem;top:.2rem;left:0.17rem; }
+
+
+.but{
+  background: #000;
+  color: #fff;
+  font-size: 0.3rem;
+  &:active,&:focus{
+    font-size: 0.3rem;
+    color: #fff;
+  }
+}
+/*vant弹出框的遮罩层透明度*/
+.van-overlay{
+  opacity: .75 !important;
+}
+/*首页按钮大小高度*/ 
+.van-button--large{
+  height: .7rem !important;
+  line-height: .7rem !important;
+  font-size: .28rem !important;
+
+}
+.van-cell{
+  border: 1px solid #ebedf0;
+  line-height: .4rem !important;
+  padding: .1rem .32rem !important;
+  font-size: .24rem !important;
+}
+
+.van-dialog{
+  width: 5.8rem !important;
+}
+//disabel的复选框
+.van-checkbox__icon--disabled.van-checkbox__icon--checked .van-icon{
+  // color:#fff !important;
+}
+.van-checkbox__icon--disabled .van-icon{
+  // background-color:#1989fa !important;
+  // border-color:#1989fa !important;
+}
+.van-checkbox__label--disabled, .van-radio__icon--disabled.van-radio__icon--checked .van-icon{
+  // color: #323233 !important;
+}
+.van-checkbox__icon--disabled .van-icon{
+
+}
+.van-checkbox{
+  // align-items: flex-start !important;
+  font-size: .24rem;;
+}
+.van-checkbox__icon{
+  // margin-top: .08rem;
+}
+.van-radio-group{
+  display: flex
+}
