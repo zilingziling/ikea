@@ -1,13 +1,13 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/NewMember/index",
-			"style": {
-				"navigationBarTitleText": "ikea"
-			}
-		},
+					"path": "pages/NewVerifyPhone/index",
+					"style": {
+						"navigationBarTitleText": "ikea"
+					}
+				},
 		{
-			"path": "pages/index/index",
+			"path": "pages/NewMember/index",
 			"style": {
 				"navigationBarTitleText": "ikea"
 			}
@@ -49,12 +49,7 @@
 //				"navigationBarTitleText": "ikea"
 //			}
 //		},
-//		{
-//			"path": "pages/NewVerifyPhone/index",
-//			"style": {
-//				"navigationBarTitleText": "ikea"
-//			}
-//		},
+//
 //		{
 //			"path": "pages/NewVerifyPlan/index",
 //			"style": {

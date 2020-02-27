@@ -1,64 +1,22 @@
 <template>
     <div class="member">
         <div class="member-family">
-            <img src="../../static/family.png" alt="">
-            <div class="member-family-welcome">
-                <span>欢迎加入 <b>宜家俱乐部</b> </span>
-                <span>用灵感点亮你的家居梦想</span>
+            <div class="member-family-content">
+                <img src="../../static/family.png" alt="">
+                <div class="member-family-content-welcome">
+                    <p>欢迎加入 <span>宜家俱乐部</span> </p>
+                    <p>用灵感点亮你的家居梦想</p>
+                </div>
             </div>
         </div>
         <img class="member-large" src="../../static/largeFamily.png">
-        <div class="member-feature">
-            <span class="member-feature-t">
-                <span class="member-feature-t-jion">
-                    <a class="member-feature-t-jion-l">￥<b>10</b> </a>
-                    <a class="member-feature-t-jion-r">
-                        <b class="member-feature-t-jion-r-t">入会有礼</b>
-                        <a class="member-feature-t-jion-r-b">满减优惠券</a>
-                    </a>
-                </span>
-                <span class="member-feature-t-jion">
-                    <a class="member-feature-t-jion-l"> <img src="../../static/product.jpg" alt=""> </a>
-                    <a class="member-feature-t-jion-r">
-                        <b class="member-feature-t-jion-r-t">特惠产品</b>
-                        <a class="member-feature-t-jion-r-b">每月会员折扣</a>
-                    </a>
-                </span>
-                <span class="member-feature-t-jion">
-                    <a class="member-feature-t-jion-l"><img src="../../static/birthday.png" alt=""></a>
-                    <a class="member-feature-t-jion-r">
-                        <b class="member-feature-t-jion-r-t">生日惊喜</b>
-                        <a class="member-feature-t-jion-r-b">￥10优惠券</a>
-                    </a>
-                </span>
-            </span>
-
-            <span class="member-feature-b">
-                <span class="member-feature-b-jion">
-                    <a class="member-feature-b-jion-l"> <img src="../../static/activity.png" alt=""> </a>
-                    <a class="member-feature-b-jion-r">
-                        <b class="member-feature-b-jion-r-t">专享活动</b>
-                        <a class="member-feature-b-jion-r-b">家居知识讲座</a>
-                    </a>
-                </span>
-                <span class="member-feature-b-jion">
-                    <a class="member-feature-b-jion-l"> <img src="../../static/guarantee.png" alt=""> </a>
-                    <a class="member-feature-b-jion-r">
-                        <b class="member-feature-b-jion-r-t">安心保障</b>
-                        <a class="member-feature-b-jion-r-b">退换货时间延长</a>
-                    </a>
-                </span>
-            </span>
-            <span class="member-feature-b">
-
-            </span>
-        </div>
+        <img class="member-feature" src="../../static/actDetail.png">
         <div class="member-btn">
-<!--            <van-button type="primary" color='#0077c8' round size="large" to="newverifyphone">新会员注册</van-button>-->
-<!--            <van-button type="default"  round size="large" to="phoneverify">我是老会员</van-button>-->
+            <button type="primary"  class="member-btn-new">新会员注册</button>
+            <button type="default"  class="member-btn-old">我是老会员</button>
         </div>
         <div class="member-return">
-<!--            <a @click="backMemberCenter">返回会员中心<van-icon name="arrow" /></a>-->
+            <a @click="backMemberCenter">返回会员中心 > </a>
         </div>
     </div>
 </template>
@@ -75,54 +33,68 @@ return {
 computed: {},
 watch: {},
 methods: {
-// backMemberCenter(){
-// window.location.href = memberURL
-// }
+backMemberCenter(){
+window.location.href = ""
+}
 },
 created() {
 // console.log(this.$route)
 },
 mounted() {}
-}
+};
+
 </script>
 <style lang='less' scoped>
 @import "../../styles/common.less";
 .member{
-    height: 100%;
-    // height: 13.4rem;
-    // background: #ccc;
-&-family{
-        width: 100%;
-        height: 2.15rem;
+    height: auto;
+    // height: 13.4rpx;
+    background: #ffffff;
+    &-family{
+        width: 100vw;
+        height: 213rpx;
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width: 1.5rem;
-            height: 1rem;
-            margin-left: .3rem;
-        }
-    &-welcome{
-            width: 4.7rem;
-            height: 1rem;
-            color:#0077c8;
-            font-size: .4rem;
+        padding:58rpx 54rpx;
+        box-sizing: border-box;
+        &-content{
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            margin-left: .4rem;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            img{
+                width: 148rpx;
+                height: 109rpx;
+            }
+            &-welcome{
+                width: 459rpx;
+                color:rgba(0, 119, 200, 1);
+                font-size: 42rpx;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    white-space: nowrap;
+                    font-family: NotoIKEASimplifiedChinese-Bold;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+         }
+    }
+    &-large{
+             width: 100%;
+            height: 360rpx;
         }
-    }
-&-large{
-        width: 100%;
-        height: 3.6rem;
-    }
-&-feature{
-        width: 100%;
-        height: 2.7rem;
-        display: flex;
-        margin-top: .3rem;
-        flex-direction: column;
-        justify-content: center;
+    &-feature{
+
+        width: 746rpx;
+        height: 360rpx;
+        margin: auto;
+
         // background: #ccc;
     &-t{
             width: 100%;
@@ -131,86 +103,111 @@ mounted() {}
         &-jion{
                 display: flex;
                 align-items: center;
-                padding: 0 .15rem;
-                // width: 2.55rem;
-                height: .93rem;
+                padding: 0 15rpx;
+                // width: 2.55rpx;
+                height: 93rpx;
                 // background: red;
             &-l{
-                    font-size: .2rem;
+                    font-size: 20rpx;
                     img{
-                        height: .55rem;
+                        width: 51rpx;
+                        height: 55rpx;
                         color: black;
                     }
                     b{
-                        font-size: .5rem;
+                        font-size: 50rpx;
                     }
                 }
             &-r{
                     display: flex;
                     flex-direction: column;
-                    margin-left: .1rem;
+                    margin-left: 10rpx;
                 &-t{
-                        font-size: .36rem;
+                        font-size: 36rpx;
                     }
                 &-b{
-                        font-size: .2rem;
+                        font-size: 20rpx;
                     }
                 }
             }
         }
     &-b{
-            margin-top: .2rem;
+            margin-top: 20rpx;
             width: 100%;
             display: flex;
             justify-content: center;
         &-jion{
                 display: flex;
                 align-items: center;
-                padding: 0 .15rem;
-                height: .93rem;
+                padding: 0 15rpx;
+                height: 93rpx;
             &-l{
-                    font-size: .2rem;
+                    font-size: 20rpx;
                     img{
-                        height: .55rem;
+                        width: 41rpx;
+                        height: 44rpx;
                         color: black;
                     }
                     b{
-                        font-size: .5rem;
+                        font-size: 50rpx;
                     }
                 }
             &-r{
                     display: flex;
                     flex-direction: column;
-                    margin-left: .1rem;
+                    margin-left: 10rpx;
                 &-t{
-                        font-size: .36rem;
+                        font-size: 36rpx;
                     }
                 &-b{
-                        font-size: .2rem;
+                        font-size: 20rpx;
                     }
                 }
             }
         }
     }
 &-btn{
-        margin-top: 1rem;
-        padding: 0 .9rem;
-        height: 2rem;
+        /*margin-top: 100rpx;*/
+        padding: 0 90rpx;
+        height: 200rpx;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         // background: yellow;
+        &-new{
+            height: 80rpx;
+            width: 570rpx;
+            border-radius:40rpx;
+            background:rgba(0,119,200,1);
+            font-size:30rpx;
+            font-family:NotoIKEASimplifiedChinese;
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+            line-height: 80rpx;
+        }
+    &-old{
+        height: 80rpx;
+        width: 570rpx;
+        border-radius:40rpx;
+        border:2rpx solid rgba(85,85,85,1);
+        font-size:30rpx;
+        font-family:NotoIKEASimplifiedChinese;
+        font-weight:bold;
+        color:rgba(35,35,35,1);
+        line-height: 80rpx;
+    }
     }
 &-return{
-        height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a{
+            height: 150rpx;
         display: flex;
-        height: .3rem;
-        line-height: .3rem;
-        color: #b0b0b0;
+        justify-content: center;
+        align-items: center;
+    a{
+
+        font-size:28rpx;
+        font-family:NotoIKEASimplifiedChinese;
+        font-weight:400;
+        color:rgba(85,85,85,1);
     }
 }
 }
