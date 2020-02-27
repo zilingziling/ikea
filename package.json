@@ -36,7 +36,10 @@
     "@dcloudio/uni-mp-weixin": "^2.0.0-26120200226001",
     "@dcloudio/uni-stat": "^2.0.0-26120200226001",
     "flyio": "^0.6.2",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.13.1",
     "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vuex": "^3.0.1"
   },
@@ -54,6 +57,7 @@
     "@vue/cli-plugin-babel": "3.5.1",
     "@vue/cli-service": "~4.2.0",
     "babel-plugin-import": "^1.11.0",
+    "less": "^3.11.1",
     "mini-types": "*",
     "miniprogram-api-typings": "^2.8.0-2",
     "postcss-comment": "^2.0.0",

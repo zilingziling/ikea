@@ -8,20 +8,26 @@
 		<b>宜家会员俱乐部</b>
 	</div>
 	<div class="return">
-		<div class="return-btn"><a @click="backMemberCenter">返回会员中心</a><uni-icons type="contact" size="30"></uni-icons></div>
+		<div class="return-btn"><div style="display:in-lineblock:font-size:16px;" @click="backMemberCenter">{{text}}<uni-icons type="arrowright" color='#8f8f8f' size="16"></uni-icons></div></div>
 	</div>
 </view>
 </template>
 
 <script>
-import uniIcons from "../../../components/yangxiaochuang-icons/yangxiaochuang-icons"
+import uniIcons from "../components/uni-icons/uni-icons"
 export default {
-components: {uniIcons},
+	components: {uniIcons},
 data() {
-	return {};
+	return {
+		text:'返回会员中心'
+	};
 },
 onLoad() {},
-methods: {}
+methods: {
+	backMemberCenter(){
+		console.log('点击返回会员中心')
+	}
+}
 };
 </script>
 
